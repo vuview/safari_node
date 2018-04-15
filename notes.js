@@ -50,7 +50,18 @@ var getAll = () => {
 }
 
 var removeNote = (title) => {
+    var newNotes = [];		
     console.log(`Remove ${title} from list`);        
+    var noteString = fs.readFileSync('notes-data.json');
+    notes = JSON.parse(noteString);  
+    _.forEach(notes, (note) => {
+    	if(note.title !== title){
+		newNotes.push(note);
+	}
+    });
+   if(notes.length>0){
+	fs.writeFileSync('notes-data.json', JSON.stringify(newNotes));	
+   }
 }
 
 var getNote = (title) => {
