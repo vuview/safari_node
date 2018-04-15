@@ -1,0 +1,15 @@
+{
+  "name": "node",
+  "version": "1.0.0",
+  "description": "Node HelloWorld",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Minh Vu",
+  "license": "ISC",
+  "dependencies": {
+    "lodash": "^4.17.5",
+    "yargs": "^4.7.1"
+  }
+}
