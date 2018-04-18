@@ -1,3 +1,4 @@
+// start some note here
 console.log('Starting notes');
 const _ = require('lodash');
 
