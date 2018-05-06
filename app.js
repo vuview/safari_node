@@ -14,7 +14,7 @@ console.log('Yargs', argv);
 console.log(process.argv);
 
 if(command === 'add'){
-    //console.log('Adding new notes');
+    console.log('Adding new notes');
     notes.addNote(argv.title, argv.body);
 } else if(command === 'list'){
     //console.log('Listing all notes');        
